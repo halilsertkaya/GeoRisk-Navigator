@@ -13,18 +13,18 @@ An interactive web-based Geographic Information System (GIS) designed to map and
 1. Enable the PostGIS extension in your PostgreSQL database:
    ```sql
    CREATE EXTENSION postgis;
-Create the required database table:
+2. Create the required database table:
 
-SQL
-CREATE TABLE risk_points (
+   ``` SQL
+   CREATE TABLE risk_points (
     id SERIAL PRIMARY KEY,
     title VARCHAR(150) NOT NULL,
     category VARCHAR(50) NOT NULL,
     risk_level VARCHAR(20) NOT NULL,
     description TEXT,
     geom GEOMETRY(Point, 4326)
-);
+   );
 
-Update your database credentials inside db_connect.php.
+3. Update your database credentials inside db_connect.php.
 
-Deploy the project to your local server environment and run index.html.
+4. Deploy the project to your local server environment and run index.html.
